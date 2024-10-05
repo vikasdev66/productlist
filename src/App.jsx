@@ -7,7 +7,7 @@ function App() {
   const handleDelete = async (id) => {
     try {
       const res = await fetch(
-        `https://node-crud-api-swart.vercel.app/api/products/${id}`,
+        `https://productlistapi.vikasmishra.online/api/products/${id}`,
         { method: "DELETE" }
       );
       const data = await res.json();
@@ -26,7 +26,7 @@ function App() {
     (async () => {
       try {
         const res = await fetch(
-          "https://node-crud-api-swart.vercel.app/api/products",
+          "https://productlistapi.vikasmishra.online/api/products",
           { method: "GET" }
         );
         const data = await res.json();
